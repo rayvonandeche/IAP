@@ -1,4 +1,6 @@
 <?php
+require_once __DIR__ . '/Router.php';
+
 class App {
     protected $router;
 
