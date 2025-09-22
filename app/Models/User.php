@@ -1,6 +1,7 @@
 <?php
 
 require_once __DIR__ . '/BaseModel.php';
+require_once __DIR__ . '/../Core/Database.php';
 
 /**
  * User Model - Enhanced for BomaTrack property management system
