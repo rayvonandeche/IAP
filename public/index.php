@@ -1,5 +1,7 @@
-<<?php
+<?php
 require_once '../app/Core/App.php';
+require_once '../app/Controllers/DashboardController.php';
+require_once '../app/Controllers/AuthController.php';
 
 $app = new App();
 

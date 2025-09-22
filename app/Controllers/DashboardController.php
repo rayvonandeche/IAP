@@ -1,7 +1,7 @@
 <?php
 
 require_once __DIR__ . '/../Helpers/AuthHelper.php';
-
+require_once __DIR__ .'/BaseController.php';
 class DashboardController extends BaseController
 {
     public function showDashboard()
