@@ -6,6 +6,7 @@
  * This class manages database connections using MySQLi with singleton pattern
  * to ensure only one connection instance exists throughout the application.
  */
+
 class Database {
     private static $instance = null;
     private $connection;
