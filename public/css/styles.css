@@ -17,7 +17,8 @@ main.container { padding: 24px 0 40px; }
 header.site-header {
     background: #2f3b45;
     color: #fff;
-}
+}   
+
 
 .header-inner {
     display: flex;
