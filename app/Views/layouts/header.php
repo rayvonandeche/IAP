@@ -29,6 +29,10 @@ if ($isLoggedIn) {
                 <?php else: ?>
                     <!-- Show full navigation for verified users -->
                     <li><a href="/dashboard">Dashboard</a></li>
+                    <li><a href="/properties">Properties</a></li>
+                    <li><a href="/units">Units</a></li>
+                    <li><a href="/tenants">Tenants</a></li>
+                    <li><a href="/payments">Payments</a></li>
                     <li><a href="/profile">Profile</a></li>
                     <li class="user-info">
                         Welcome, <?= htmlspecialchars($currentUser->getFirstName() ?? $currentUser->getUsername()) ?>

@@ -16,7 +16,7 @@ use PHPMailer\PHPMailer\Exception;
  * 
  * Features proper OOP design with error handling and configuration management
  */
-class EmailService
+class EmailService 
 {
     private $mailer;
     private $config;

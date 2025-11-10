@@ -3,8 +3,7 @@
 require_once __DIR__ . '/../Models/User.php';
 require_once __DIR__ . '/../Services/EmailService.php';
 require_once __DIR__ . '/../Helpers/AuthHelper.php';
-require_once __DIR__ . "/../Models/VerificationToken.php";
-
+require_once __DIR__ . '/../Models/VerificationToken.php';
 /**
  * AuthController - Handles authentication operations for BomaTrack
  * 
