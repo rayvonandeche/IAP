@@ -10,4 +10,5 @@ return [
     'encryption' => 'smtps', // For port 465
     'debug' => false, // Set to true for debugging
 ];
+
 ?>
