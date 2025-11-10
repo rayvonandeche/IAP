@@ -1,6 +1,4 @@
 -- BomaTrack Database Schema
--- Internet Application Programming Project
--- Email Verification System
 
 -- Create database
 CREATE DATABASE IF NOT EXISTS `bomatrack_db` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
@@ -111,7 +109,7 @@ CREATE TABLE `units` (
 -- Tenants table
 CREATE TABLE `tenants` (
     `id` INT AUTO_INCREMENT PRIMARY KEY,
-    `user_id` INT NOT NULL,
+    `user_id` INT DEFAULT NULL,
     `first_name` VARCHAR(100) NOT NULL,
     `last_name` VARCHAR(100) NOT NULL,
     `email` VARCHAR(255) NOT NULL,
@@ -123,7 +121,7 @@ CREATE TABLE `tenants` (
     `created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     `updated_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
     
-    FOREIGN KEY (`user_id`) REFERENCES `users`(`id`) ON DELETE CASCADE,
+    FOREIGN KEY (`user_id`) REFERENCES `users`(`id`) ON DELETE SET NULL,
     INDEX `idx_user_id` (`user_id`),
     INDEX `idx_email` (`email`),
     INDEX `idx_phone` (`phone`)

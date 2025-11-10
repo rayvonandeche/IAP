@@ -7,7 +7,7 @@ class DashboardController extends BaseController
     public function showDashboard()
     {
         // Require authentication and email verification
-        AuthHelper::requireEmailVerification();
+    
         
         // Get current user for dashboard data
         $currentUser = AuthHelper::getCurrentUser();
