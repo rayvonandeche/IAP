@@ -4,7 +4,7 @@ return [
     'host' => 'localhost',
     'dbname' => 'bomatrack_db',
     'username' => 'root',
-    'password' => '1234',
+    'password' => 'zawadi1256',
     'charset' => 'utf8mb4',
 ];
 ?>
